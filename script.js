@@ -9,7 +9,7 @@ const user = {
     showMyPublicData: function () {
         console.log(`${this.name} ${this.surname}`);
     },
-    line: line,
+    [line]: 777,
 };
 
 console.log(Object.getOwnPropertyDescriptor(user, 'name'));
@@ -39,7 +39,7 @@ console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(Object.entries(user));
 
-console.log(user.line);
+console.log(user[line]);
 
 // user.birthday = '01/01/2001'; //ошибка
 
