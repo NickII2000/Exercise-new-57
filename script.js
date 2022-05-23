@@ -1,12 +1,15 @@
 'use strict';
 
+const line = Symbol('line');
+
 const user = {
     name: 'Alex',
     surname: 'Smith',
     birthday: '20/04/1993',
     showMyPublicData: function () {
         console.log(`${this.name} ${this.surname}`);
-    }
+    },
+    line: line,
 };
 
 console.log(Object.getOwnPropertyDescriptor(user, 'name'));
@@ -35,6 +38,8 @@ Object.defineProperties(user, { name: { writable: false }, surname: { writable: 
 console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(Object.entries(user));
+
+console.log(user.line);
 
 // user.birthday = '01/01/2001'; //ошибка
 
