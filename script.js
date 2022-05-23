@@ -32,6 +32,10 @@ console.log(Object.getOwnPropertyDescriptor(Math, 'PI'));
 
 Object.defineProperties(user, { name: { writable: false }, surname: { writable: false } });
 
+console.log(Object.keys(user));
+console.log(Object.values(user));
+console.log(Object.entries(user));
+
 // user.birthday = '01/01/2001'; //ошибка
 
 // writable
