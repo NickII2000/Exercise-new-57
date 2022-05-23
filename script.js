@@ -40,6 +40,7 @@ console.log(Object.values(user));
 console.log(Object.entries(user));
 
 console.log(user[line]);
+console.log(Object.getOwnPropertyDescriptor(user, line));
 
 // user.birthday = '01/01/2001'; //ошибка
 
