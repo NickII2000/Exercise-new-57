@@ -9,6 +9,8 @@ const user = {
     }
 };
 
+console.log(Object.getOwnPropertyDescriptor(user, 'name'));
+
 // writable
 // enumerable
 // configurable
