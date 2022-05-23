@@ -28,6 +28,10 @@ Object.defineProperty(user, 'showMyPublicData', { enumerable: false });
 
 for (let key in user) console.log(key);
 
+console.log(Object.getOwnPropertyDescriptor(Math, 'PI'));
+
+Object.defineProperties(user, { name: { writable: false }, surname: { writable: false } });
+
 // user.birthday = '01/01/2001'; //ошибка
 
 // writable
