@@ -18,6 +18,9 @@ console.log(Object.getOwnPropertyDescriptor(user, 'gender'));
 user.age = 25;
 console.log(Object.getOwnPropertyDescriptor(user, 'age'));
 
+Object.defineProperty(user, 'birthday', { writable: false });
+console.log(Object.getOwnPropertyDescriptor(user, 'birthday'));
+
 
 // writable
 // enumerable
