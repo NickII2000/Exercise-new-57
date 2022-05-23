@@ -21,8 +21,10 @@ console.log(Object.getOwnPropertyDescriptor(user, 'age'));
 Object.defineProperty(user, 'birthday', { writable: false });
 console.log(Object.getOwnPropertyDescriptor(user, 'birthday'));
 
-Object.defineProperty(user, 'address', { value: 'Russia', enumerable: true, configurable: true });
+Object.defineProperty(user, 'address', { value: 'Russia', enumerable: false, configurable: true });
 console.log(Object.getOwnPropertyDescriptor(user, 'address'));
+
+for (let key in user) console.log(key);
 
 // user.birthday = '01/01/2001'; //ошибка
 
