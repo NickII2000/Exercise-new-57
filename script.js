@@ -10,6 +10,8 @@ const user = {
 };
 
 console.log(Object.getOwnPropertyDescriptor(user, 'name'));
+Object.defineProperty(user, 'name', { writable: false });
+user.name = 'Nick';
 
 // writable
 // enumerable
