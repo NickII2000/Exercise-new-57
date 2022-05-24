@@ -35,7 +35,7 @@ console.log(Object.getOwnPropertyDescriptor(Math, 'PI'));
 
 Object.defineProperties(user, { name: { writable: false }, surname: { writable: false } });
 console.log(Object.getOwnPropertyDescriptor(user, 'name'));
-// console.log(Object.getOwnPropertyDescriptor(user, 'surname'));
+console.log(Object.getOwnPropertyDescriptor(user, 'surname'));
 
 console.log(Object.keys(user));
 console.log(Object.values(user));
